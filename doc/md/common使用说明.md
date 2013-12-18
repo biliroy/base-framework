@@ -1,0 +1,1 @@
+#### dactiv common 使用说明 ####

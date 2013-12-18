@@ -4,7 +4,7 @@ import org.eclipse.jetty.server.Server;
 import com.github.dactiv.common.unit.JettyFactory;
 
 /**
- * 启动jetty服务,运行后通过http://localhost:8080/exitsoft-basic-curd/来访问项目路径
+ * 启动jetty服务,运行后通过http://localhost:8080/base-curd/来访问项目路径
  * 
  * @author vincent
  *
@@ -18,9 +18,9 @@ public class LaunchJetty {
 	/**
 	 * 项目名称
 	 */
-	public static final String CONTEXT = "/exitsoft-basic-curd";
+	public static final String CONTEXT = "/base-curd";
 	
-	public static final String[] TLD_JAR_NAMES = new String[] { "spring-webmvc", "shiro-web" };
+	public static final String[] TLD_JAR_NAMES = new String[] { "shiro-web" };
 	public static final String ACTIVE_PROFILE = "spring.profiles.active";
 
 	public static void main(String[] args) throws Exception {

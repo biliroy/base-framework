@@ -26,7 +26,7 @@
 		</div>
    		<h3>操作失败</h3> 
    		<hr> 
-   		<p>原因:<#if exception.class == 'class org.exitsoft.showcase.service.ServiceException'>${exception.message}<#else>系统出现未知异常</#if></p> 
+   		<p>原因:<#if exception.class == 'class com.github.dactiv.showcase.service.ServiceException'>${exception.message}<#else>系统出现未知异常</#if></p> 
    		<p>
    			<button type="button" class="btn btn-default" onclick="history.back();">
    				<span class="glyphicon glyphicon-backward"></span> 返回

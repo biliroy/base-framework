@@ -12,7 +12,7 @@
 	<groupId>com.github.dactiv.showcase</groupId>
 	<artifactId>base-curd</artifactId>
 	<packaging>war</packaging>
-	<name>basic curd project</name>
+	<name>base curd project war</name>
 	
 	<repositories>
 		<!-- 使用"国服"，如果"国服"没有会去官方maven库中下载-->

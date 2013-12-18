@@ -99,7 +99,7 @@ public class OperatingRecordController {
 		Map<String, OperatingRecord> model = Collections.singletonMap("entity", value);
 		
 		try {
-			javaMailService.sendByTemplate(mailReceive, "basic-curd-project", 
+			javaMailService.sendByTemplate(mailReceive, "base-curd-project", 
 						"异常错误报告", "operating-mail-template.ftl", null, model);
 		} catch (Exception e) {
 			e.printStackTrace();

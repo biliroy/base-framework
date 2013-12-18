@@ -22,8 +22,8 @@ base-framework是对常用的java web开发封装实用功能来提高开发效�
 1. 使用git或者svn下载base-framework
 
 ***
-	git地址:git://github.com/exitsoft/base-framework.git
-	svn地址:https://github.com/exitsoft/base-framework.git
+	git地址:git://github.com/dactiv/base-framework.git
+	svn地址:https://github.com/dactiv/base-framework.git
 ***
 
 1. 点击根目录下的quick-start.bat文件进行安装,当看见以下信息时表示安装成功:
@@ -42,21 +42,21 @@ base-framework是对常用的java web开发封装实用功能来提高开发效�
 
 你可以通过http://localhost:8080/base-curd/来访问项目
 
-该安装过程会将base-framework中的exit-common和exit-orm生成jar包放入maven的.m2文件夹中（当然,这两个框架使用到的依赖jar包也会下载到.m2文件夹中）.同时也会初始化h2数据库和启动jetty，让执行完成后直接访问。
+该安装过程会将base-framework中的dactiv-common和dactiv-orm生成jar包放入maven的.m2文件夹中（当然,这两个框架使用到的依赖jar包也会下载到.m2文件夹中）.同时也会初始化h2数据库和启动jetty，让执行完成后直接访问。
 
-##### exitsoft common 简单说明
+##### dactiv common 简单说明
 
 该jar包是对基本的常用工具类的一些简单封装。如泛型，反射，配置文件等工具类的封装。
 
-##### exitsoft orm 简单说明
+##### dactiv orm 简单说明
 
 该jar包是对持久化层的框架封装，目前只对Hibernate4和spring data jpa的CURD和辅助查询功能封装。
 
 ##### 项目功能演示例子
 
-在文件夹的shorcase里有一个basic-curd项目。该项目是对以上两个框架(exit-common和exit-orm)和其他技术的整合做的例子，通过该例子使用maven做了一个archetype基础模板。可以通过该archetype来生成一个新的项目。该文件在basic-curd\bin下面（archetype-generate.bat）。
+在文件夹的shorcase里有一个base-curd项目。该项目是对以上两个框架(dactiv-common和dactiv-orm)和其他技术的整合做的例子，通过该例子使用maven做了一个archetype基础模板。可以通过该archetype来生成一个新的项目。该文件在base-curd\bin下面（archetype-generate.bat）。
 
-通过basic-curd项目文件夹中的bin/jetty.bat文件运行项目，也可以用eclipse.bat生成项目导入到开发工具中在运行。该工程下有一个基于jeety运行的java文件org.exitsoft.showcase.test.LaunchJetty.你也可以通过该文件运行整个项目.
+通过base-curd项目文件夹中的bin/jetty.bat文件运行项目，也可以用eclipse.bat生成项目导入到开发工具中在运行。该工程下有一个基于jeety运行的java文件org.dactiv.showcase.test.LaunchJetty.你也可以通过该文件运行整个项目.
 
 ##### 导入eclipse或者myeclipse
 在根目录下的bin目录有一个eclipse.bat和myeclipse.bat，点击eclipse.bat/myeclipse.bat会生成project，看见以下信息表示生成成功，可以直接导入eclipse/myclipse
@@ -65,11 +65,11 @@ base-framework是对常用的java web开发封装实用功能来提高开发效�
 	[INFO] ------------------------------------------------------------------------
 	[INFO] Reactor Summary:
 	[INFO]
-	[INFO] exitsoft parent ................................... SUCCESS [0.552s]
-	[INFO] exitsoft common jar ............................... SUCCESS [2:21.572s]
-	[INFO] exitsoft orm jar .................................. SUCCESS [6.828s]
-	[INFO] basic curd project ................................ SUCCESS [1:07.878s]
-	[INFO] exit web framework project ........................ SUCCESS [0.644s]
+	[INFO] dactiv parent pom................................... SUCCESS [0.552s]
+	[INFO] dactiv common jar ............................... SUCCESS [2:21.572s]
+	[INFO] dactiv orm jar .................................. SUCCESS [6.828s]
+	[INFO] base curd project war ................................ SUCCESS [1:07.878s]
+	[INFO] base web framework project ........................ SUCCESS [0.644s]
 	[INFO] ------------------------------------------------------------------------
 	[INFO] BUILD SUCCESS
 	[INFO] ------------------------------------------------------------------------

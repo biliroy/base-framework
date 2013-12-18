@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="base-framework : base-framework是对常用的java web开发封装实用功能来提高开发效率。base-framework基于Spring、Hibernate框架来做项目核心三层和MVC的管理。使用到的新功能有spring缓存工厂、apeche shiro安全框架、spring mvc 等主要技术。" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>base-framework</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/dactiv/base-framework">View on GitHub</a>
+
+          <h1 id="project_title">base-framework</h1>
+          <h2 id="project_tagline">base-framework是对常用的java web开发封装实用功能来提高开发效率。base-framework基于Spring、Hibernate框架来做项目核心三层和MVC的管理。使用到的新功能有spring缓存工厂、apeche shiro安全框架、spring mvc 等主要技术。</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/dactiv/base-framework/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/dactiv/base-framework/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a name="%E6%A1%86%E6%9E%B6%E8%AF%B4%E6%98%8E" class="anchor" href="#%E6%A1%86%E6%9E%B6%E8%AF%B4%E6%98%8E"><span class="octicon octicon-link"></span></a>框架说明</h3>
+
+<p>base-framework是对常用的java web开发封装实用功能来提高开发效率的底层框架。base-framework基于Spring 3做核心框架、Hibernate4或spring data jpa做持久化框架,用spring mvc 框架对mvc做管理。使用到的新功能有spring缓存工厂、apeche shiro安全框架、spring mvc 3,spring data jpa等主要流行技术, 该项目分为两个部分做底层的封装，和带两个项目功能演示例子。</p>
+
+<p><a href="https://github.com/exitsoft/base-framework/wiki">相关帮助文档</a></p>
+
+<h4>
+<a name="%E5%88%9D%E5%A7%8B%E5%8C%96%E5%B7%A5%E4%BD%9C" class="anchor" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E5%B7%A5%E4%BD%9C"><span class="octicon octicon-link"></span></a>初始化工作:</h4>
+
+<hr><h5>
+<a name="%E9%85%8D%E7%BD%AEmaven" class="anchor" href="#%E9%85%8D%E7%BD%AEmaven"><span class="octicon octicon-link"></span></a>配置maven</h5>
+
+<ol>
+<li>下载<a href="http://maven.apache.org/download.html">maven</a>
+</li>
+<li>解压maven-[版本]-bin.zip到你想安装的位置</li>
+<li>设置maven系统环境变量，M2_HOME=[maven安装目录位置]</li>
+<li>添加maven bin目录至系统环境变量PATH中， %M2_HOME%\bin</li>
+<li>确认Maven的安装：cmd &gt; mvn -version</li>
+</ol><h5>
+<a name="%E5%AE%89%E8%A3%85base-framework%E5%88%B0maven%E4%B8%AD" class="anchor" href="#%E5%AE%89%E8%A3%85base-framework%E5%88%B0maven%E4%B8%AD"><span class="octicon octicon-link"></span></a>安装base-framework到maven中</h5>
+
+<ol>
+<li>使用git或者svn下载base-framework</li>
+</ol><hr><pre><code>git地址:git://github.com/exitsoft/base-framework.git
+svn地址:https://github.com/exitsoft/base-framework.git
+</code></pre>
+
+<hr><ol>
+<li>点击根目录下的quick-start.bat文件进行安装,当看见以下信息时表示安装成功:</li>
+</ol><hr><pre><code>[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.147s
+[INFO] Finished at: Mon Oct 07 10:59:23 CST 2013
+[INFO] Final Memory: 9M/156M
+[INFO] ------------------------------------------------------------------------
+[INFO] start basic curd app
+[INFO] Please wait a moment. When you see "[INFO] Started Jetty Server", you can visit: http://localhost:8080/exitsoft-basic-curd/ to view the demo
+</code></pre>
+
+<hr><p>你可以通过http://localhost:8080/exitsoft-basic-curd/来访问项目</p>
+
+<p>该安装过程会将base-framework中的exit-common和exit-orm生成jar包放入maven的.m2文件夹中（当然,这两个框架使用到的依赖jar包也会下载到.m2文件夹中）.同时也会初始化h2数据库和启动jetty，让执行完成后直接访问。</p>
+
+<h5>
+<a name="exitsoft-common-%E7%AE%80%E5%8D%95%E8%AF%B4%E6%98%8E" class="anchor" href="#exitsoft-common-%E7%AE%80%E5%8D%95%E8%AF%B4%E6%98%8E"><span class="octicon octicon-link"></span></a>exitsoft common 简单说明</h5>
+
+<p>该jar包是对基本的常用工具类的一些简单封装。如泛型，反射，配置文件等工具类的封装。</p>
+
+<h5>
+<a name="exitsoft-orm-%E7%AE%80%E5%8D%95%E8%AF%B4%E6%98%8E" class="anchor" href="#exitsoft-orm-%E7%AE%80%E5%8D%95%E8%AF%B4%E6%98%8E"><span class="octicon octicon-link"></span></a>exitsoft orm 简单说明</h5>
+
+<p>该jar包是对持久化层的框架封装，目前只对Hibernate4和spring data jpa的CURD和辅助查询功能封装。</p>
+
+<h5>
+<a name="%E9%A1%B9%E7%9B%AE%E5%8A%9F%E8%83%BD%E6%BC%94%E7%A4%BA%E4%BE%8B%E5%AD%90" class="anchor" href="#%E9%A1%B9%E7%9B%AE%E5%8A%9F%E8%83%BD%E6%BC%94%E7%A4%BA%E4%BE%8B%E5%AD%90"><span class="octicon octicon-link"></span></a>项目功能演示例子</h5>
+
+<p>在文件夹的shorcase里有一个basic-curd项目。该项目是对以上两个框架(exit-common和exit-orm)和其他技术的整合做的例子，通过该例子使用maven做了一个archetype基础模板。可以通过该archetype来生成一个新的项目。该文件在basic-curd\bin下面（archetype-generate.bat）。</p>
+
+<p>通过basic-curd项目文件夹中的bin/jetty.bat文件运行项目，也可以用eclipse.bat生成项目导入到开发工具中在运行。该工程下有一个基于jeety运行的java文件org.exitsoft.showcase.test.LaunchJetty.你也可以通过该文件运行整个项目.</p>
+
+<h5>
+<a name="%E5%AF%BC%E5%85%A5eclipse%E6%88%96%E8%80%85myeclipse" class="anchor" href="#%E5%AF%BC%E5%85%A5eclipse%E6%88%96%E8%80%85myeclipse"><span class="octicon octicon-link"></span></a>导入eclipse或者myeclipse</h5>
+
+<p>在根目录下的bin目录有一个eclipse.bat和myeclipse.bat，点击eclipse.bat/myeclipse.bat会生成project，看见以下信息表示生成成功，可以直接导入eclipse/myclipse</p>
+
+<hr><pre><code>[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO]
+[INFO] exitsoft parent ................................... SUCCESS [0.552s]
+[INFO] exitsoft common jar ............................... SUCCESS [2:21.572s]
+[INFO] exitsoft orm jar .................................. SUCCESS [6.828s]
+[INFO] basic curd project ................................ SUCCESS [1:07.878s]
+[INFO] exit web framework project ........................ SUCCESS [0.644s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3:39.025s
+[INFO] Finished at: Wed Dec 04 14:50:14 CST 2013
+[INFO] Final Memory: 10M/25M
+[INFO] ------------------------------------------------------------------------
+</code></pre>
+
+<hr><p>注意:过于旧版本的的eclipse和myeclipse在导入项目时如果发现有错,请检查工具是否已经配置了maven的仓库路径.具体查看在工具的:window-&gt;preferences,然后进入到Java-&gt;Build Path-&gt;Classpath Variables查看左边是否存在M2_REPO,如果不存在,点击New按钮,Name:M2_REPO,Path:你仓库的位置.如:C:\Users\feng.m2\repository</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">base-framework maintained by <a href="https://github.com/dactiv">dactiv</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>

@@ -14,7 +14,7 @@ import org.openqa.selenium.WebElement;
 /**
  * 测试数据字典管理功能
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public class TestDataDictonaryManagerFunction extends FunctionTestCaseSupport{

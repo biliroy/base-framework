@@ -92,16 +92,16 @@ public class TestJpaSupportRepository {
 		userList = userRepository.findAll(Specifications.get(PropertyFilters.build("GTI_state", "0")));
 		Assert.assertEquals(userList.size(), 8);
 		
-		userList = userRepository.findAll(Specifications.get(PropertyFilters.build("INS_loginName", "admin,vincent")),new Sort(Direction.DESC, "loginName","realName"));
+		userList = userRepository.findAll(Specifications.get(PropertyFilters.build("INS_loginName", "admin,maurice")),new Sort(Direction.DESC, "loginName","realName"));
 		Assert.assertEquals(userList.size(), 2);
 		
-		userList = userRepository.findAll(Specifications.get(PropertyFilters.build("NINS_loginName", "admin,vincent")));
+		userList = userRepository.findAll(Specifications.get(PropertyFilters.build("NINS_loginName", "admin,maurice")));
 		Assert.assertEquals(userList.size(), 6);
 		
-		userList = userRepository.findAll(Specifications.get(PropertyFilters.build("EQS_loginName","admin|vincent")));
+		userList = userRepository.findAll(Specifications.get(PropertyFilters.build("EQS_loginName","admin|maurice")));
 		Assert.assertEquals(userList.size(), 2);
 		
-		userList = userRepository.findAll(Specifications.get(PropertyFilters.build("EQS_loginName","admin,vincent")));
+		userList = userRepository.findAll(Specifications.get(PropertyFilters.build("EQS_loginName","admin,maurice")));
 		Assert.assertEquals(userList.size(),0);
 		
 		userList = userRepository.findAll(Specifications.get(PropertyFilters.build("EQS_loginName","admin,null")));

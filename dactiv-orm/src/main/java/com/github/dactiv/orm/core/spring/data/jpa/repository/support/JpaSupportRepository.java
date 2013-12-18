@@ -38,7 +38,7 @@ import org.springframework.transaction.annotation.Transactional;
  * {@link BasicJpaRepository}接口实现类，并在{@link SimpleJpaRepository}基础上扩展,包含对{@link PropertyFilter}的支持。或其他查询的支持,
  * 重写了{@link SimpleJpaRepository#save(Object)}和{@link SimpleJpaRepository#delete(Object)}方法，支持@StateDelete注解和@ConvertProperty注解
  * 
- * @author vincent
+ * @author maurice
  *
  * @param <T> ORM对象
  * @param <ID> 主键Id类型

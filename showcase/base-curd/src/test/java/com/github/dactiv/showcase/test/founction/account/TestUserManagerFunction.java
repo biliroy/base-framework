@@ -14,7 +14,7 @@ import org.openqa.selenium.WebElement;
 /**
  * 测试用户管理功能
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public class TestUserManagerFunction extends FunctionTestCaseSupport{
@@ -35,7 +35,7 @@ public class TestUserManagerFunction extends FunctionTestCaseSupport{
 		s.click(By.xpath("//a[@href='/base-curd/account/user/read']"));
 		//填写表单
 		s.type(By.xpath("//form[@id='create-user-form']//input[@name='username']"), "admin");
-		s.type(By.xpath("//form[@id='create-user-form']//input[@name='realname']"), "vincent.chen");
+		s.type(By.xpath("//form[@id='create-user-form']//input[@name='realname']"), "maurice.chen");
 		s.type(By.xpath("//form[@id='create-user-form']//input[@name='password']"), "admin");
 		s.type(By.xpath("//form[@id='create-user-form']//input[@name='confirmPassword']"), "admin");
 		s.getSelect(By.xpath("//form[@id='create-user-form']//select[@name='state']")).selectByValue("1");
@@ -101,7 +101,7 @@ public class TestUserManagerFunction extends FunctionTestCaseSupport{
 		
 		//设置查询条件值
 		s.type(By.id("filter_RLIKES_username"), "admin");
-		s.type(By.id("filter_RLIKES_realname"), "vincent");
+		s.type(By.id("filter_RLIKES_realname"), "maurice");
 		s.getSelect(By.name("filter_EQI_state")).selectByValue("1");
 		s.type(By.id("filter_RLIKES_email"), "es");
 		

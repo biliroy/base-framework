@@ -11,7 +11,7 @@ import org.apache.commons.lang3.StringUtils;
 /**
  * UUID主键父类
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @XmlRootElement

@@ -14,7 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 /**
  * 借助spring {@link FactoryBean} 对apache shiro的premission进行动态创建
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public class ChainDefinitionSectionMetaSource implements FactoryBean<Ini.Section>{

@@ -5,7 +5,7 @@ import com.github.dactiv.showcase.common.enumeration.ValueEnum;
 /**
  * 资源类型枚举
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public enum ResourceType implements ValueEnum<String>{

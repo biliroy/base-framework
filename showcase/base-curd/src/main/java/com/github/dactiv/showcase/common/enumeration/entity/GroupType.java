@@ -5,7 +5,7 @@ import com.github.dactiv.showcase.common.enumeration.ValueEnum;
 /**
  * 组类型
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public enum GroupType implements ValueEnum<String>{

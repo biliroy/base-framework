@@ -14,7 +14,7 @@ import org.openqa.selenium.WebElement;
 /**
  * 测试组管理功能
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public class TestGroupManagerFunction extends FunctionTestCaseSupport{

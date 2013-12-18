@@ -28,7 +28,7 @@ import com.github.dactiv.orm.core.spring.data.jpa.restriction.PredicateSingleVal
  * 表达式:LT属性类型_属性名称[_OR_属性名称...]
  * </p>
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public class LtRestriction extends PredicateSingleValueSupport{

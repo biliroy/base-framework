@@ -28,7 +28,7 @@ import javax.imageio.ImageIO;
 /**
  * 简单的验证码工具类
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public class CaptchaUtils {

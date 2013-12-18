@@ -14,7 +14,7 @@ import org.openqa.selenium.WebElement;
 /**
  * 测试资源管理功能
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public class TestResourceManagerFunction extends FunctionTestCaseSupport{

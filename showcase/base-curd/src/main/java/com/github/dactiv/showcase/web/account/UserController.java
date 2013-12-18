@@ -29,7 +29,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 /**
  * 用户管理Controller
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @Controller

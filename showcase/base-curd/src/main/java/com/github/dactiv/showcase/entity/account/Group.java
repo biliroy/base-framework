@@ -25,7 +25,7 @@ import org.hibernate.annotations.NamedQuery;
 /**
  * 组实体
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @Entity

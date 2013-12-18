@@ -42,7 +42,7 @@ import com.github.dactiv.common.type.FieldType;
  * @see PropertyFilters#build(String, String)
  * @see com.github.dactiv.orm.core.hibernate.CriterionBuilder
  * 
- * @author vincent
+ * @author maurice
  */
 @SuppressWarnings("serial")
 public class PropertyFilter implements Serializable{

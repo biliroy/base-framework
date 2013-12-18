@@ -14,7 +14,7 @@ import org.openqa.selenium.WebElement;
 /**
  * 测试字典类别管理功能
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public class TestDictionaryCategoryManagerFunction extends FunctionTestCaseSupport{

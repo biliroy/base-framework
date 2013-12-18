@@ -25,7 +25,7 @@ import java.util.List;
  * @param <T>
  *            Page中记录的类型.
  * 
- * @author vincent
+ * @author maurice
  */
 @SuppressWarnings("serial")
 public class Page<T> extends PageRequest implements Serializable {

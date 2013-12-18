@@ -16,7 +16,7 @@ import org.junit.runners.BlockJUnit4ClassRunner;
 /**
  * JacksonMapper单元测试
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @RunWith(BlockJUnit4ClassRunner.class)
@@ -53,8 +53,8 @@ public class TestJacksonBundle {
 		json = JacksonBundle.nonDefaultMapper().toJson(user);
 		assertTrue(StringUtils.contains(json,"{}"));
 		
-		user.setEmail("vincent@es.com");
-		user.setUsername("vincent");
+		user.setEmail("maurice@es.com");
+		user.setUsername("maurice");
 		user.setGroupsList(new ArrayList<Group>());
 		json = JacksonBundle.nonDefaultMapper().toJson(user);
 		

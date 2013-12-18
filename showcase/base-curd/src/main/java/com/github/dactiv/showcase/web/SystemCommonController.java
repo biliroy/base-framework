@@ -37,7 +37,7 @@ import com.google.common.collect.Maps;
 /**
  * 系统安全控制器
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @Controller

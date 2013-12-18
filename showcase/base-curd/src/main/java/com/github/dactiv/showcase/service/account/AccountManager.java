@@ -29,7 +29,7 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * 账户管理业务逻辑
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @Service

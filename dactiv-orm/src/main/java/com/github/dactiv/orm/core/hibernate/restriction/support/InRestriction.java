@@ -26,7 +26,7 @@ import org.hibernate.criterion.Restrictions;
  * 表达式:IN属性类型_属性名称[_OR_属性名称...]
  * </p>
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public class InRestriction extends CriterionMultipleValueSupport{

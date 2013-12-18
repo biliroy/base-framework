@@ -279,7 +279,7 @@ public class TestBasicHibernateDao {
 		assertEquals(data.size(), 2);
 		
 		User user = userDao.get("SJDK3849CKMS3849DJCK2039ZMSK0001");
-		assertEquals(user.getLoginName(), "vincent");
+		assertEquals(user.getLoginName(), "maurice");
 		
 		data = userDao.get(new String[] {"SJDK3849CKMS3849DJCK2039ZMSK0001","SJDK3849CKMS3849DJCK2039ZMSK0002"});
 		assertEquals(data.size(), 2);
@@ -289,7 +289,7 @@ public class TestBasicHibernateDao {
 	@Test
 	public void testLoad() {
 		User user = userDao.load("SJDK3849CKMS3849DJCK2039ZMSK0001");
-		assertEquals(user.getLoginName(), "vincent");
+		assertEquals(user.getLoginName(), "maurice");
 	}
 
 	@Test
@@ -315,9 +315,9 @@ public class TestBasicHibernateDao {
 		map.put("id", "SJDK3849CKMS3849DJCK2039ZMSK0001");
 		user = userDao.findByQuery("from User u where u.id=:id", map);
 		assertEquals(user.size(), 1);
-		user = userDao.findByQuery("QueryUserJpa", "vincent");
+		user = userDao.findByQuery("QueryUserJpa", "maurice");
 		assertEquals(user.size(), 1);
-		user = userDao.findByQuery("QueryUser", "vincent");
+		user = userDao.findByQuery("QueryUser", "maurice");
 		assertEquals(user.size(), 1);
 	}
 
@@ -327,18 +327,18 @@ public class TestBasicHibernateDao {
 		User user = new User();
 		
 		user = userDao.findUniqueByQuery("from User u where u.id=?", "SJDK3849CKMS3849DJCK2039ZMSK0001");
-		assertEquals(user.getLoginName(), "vincent");
+		assertEquals(user.getLoginName(), "maurice");
 		user = userDao.findUniqueByQuery("from User u where u.id=?1", "SJDK3849CKMS3849DJCK2039ZMSK0001");
-		assertEquals(user.getLoginName(), "vincent");
+		assertEquals(user.getLoginName(), "maurice");
 		
 		Map<String, Object> map = Maps.newHashMap();
 		map.put("id", "SJDK3849CKMS3849DJCK2039ZMSK0001");
 		user = userDao.findUniqueByQuery("from User u where u.id=:id", map);
-		assertEquals(user.getLoginName(), "vincent");
-		user = userDao.findUniqueByQuery("QueryUserJpa", "vincent");
-		assertEquals(user.getLoginName(), "vincent");
-		user = userDao.findUniqueByQuery("QueryUser", "vincent");
-		assertEquals(user.getLoginName(), "vincent");
+		assertEquals(user.getLoginName(), "maurice");
+		user = userDao.findUniqueByQuery("QueryUserJpa", "maurice");
+		assertEquals(user.getLoginName(), "maurice");
+		user = userDao.findUniqueByQuery("QueryUser", "maurice");
+		assertEquals(user.getLoginName(), "maurice");
 	}
 
 	@Test

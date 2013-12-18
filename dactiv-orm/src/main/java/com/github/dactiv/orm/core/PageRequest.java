@@ -27,7 +27,7 @@ import org.springframework.util.Assert;
 
 /**
  * 分页参数封装类.
- * @author vincent
+ * @author maurice
  */
 public class PageRequest implements java.io.Serializable {
 	
@@ -222,7 +222,7 @@ public class PageRequest implements java.io.Serializable {
 	/**
 	 * 排序方式
 	 * 
-	 * @author vincent
+	 * @author maurice
 	 *
 	 */
 	public static class Sort {

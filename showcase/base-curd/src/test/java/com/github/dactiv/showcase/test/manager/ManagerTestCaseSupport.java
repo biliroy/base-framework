@@ -19,7 +19,7 @@ import org.springframework.test.jdbc.JdbcTestUtils;
 /**
  * 业务单元测试基类
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @ActiveProfiles("test")

@@ -35,7 +35,7 @@ import org.springframework.util.Assert;
  * <p>
  * 会产生的sql为: property in (1,2,3,4)
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public abstract class CriterionMultipleValueSupport extends CriterionSingleValueSupport{

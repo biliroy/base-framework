@@ -26,7 +26,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 /**
  * 资源管理Controller
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @Controller

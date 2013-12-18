@@ -14,7 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * 系统审计业务逻辑
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @Service

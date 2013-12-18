@@ -57,7 +57,7 @@ import org.springframework.util.Assert;
  * 
  * Hibernate基础类,包含对Hibernate的CURD和其他Hibernate操作
  * 
- * @author vincent
+ * @author maurice
  *
  * @param <T> ROM对象
  * @param <PK> ORM主键ID类型

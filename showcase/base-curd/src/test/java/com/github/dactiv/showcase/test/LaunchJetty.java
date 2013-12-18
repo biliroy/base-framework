@@ -6,7 +6,7 @@ import com.github.dactiv.common.unit.JettyFactory;
 /**
  * 启动jetty服务,运行后通过http://localhost:8080/base-curd/来访问项目路径
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public class LaunchJetty {

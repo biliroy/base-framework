@@ -29,7 +29,7 @@ import org.springframework.util.Assert;
 /**
  * 属性过滤器工具类
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public class PropertyFilters {
@@ -40,7 +40,7 @@ public class PropertyFilters {
 	 * 	如：
 	 * </p>
 	 * <code>
-	 * 	PropertyFilters.build("EQS_propertyName","vincent")
+	 * 	PropertyFilters.build("EQS_propertyName","maurice")
 	 * </code>
 	 * 
 	 * @param expression 表达式

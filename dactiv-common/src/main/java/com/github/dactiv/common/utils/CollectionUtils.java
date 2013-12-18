@@ -28,7 +28,7 @@ import org.apache.commons.lang3.StringUtils;
 /**
  * 泛型工具类
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @SuppressWarnings({"rawtypes","unchecked"})

@@ -15,7 +15,7 @@ import com.github.dactiv.showcase.entity.IdEntity;
 /**
  * 操作记录类，记录用户的操作信息
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @Entity

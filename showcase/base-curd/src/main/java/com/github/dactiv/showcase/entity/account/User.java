@@ -20,7 +20,7 @@ import org.hibernate.annotations.NamedQuery;
 
 /**
  * 用户类
- * @author vincent
+ * @author maurice
  *
  */
 @Entity

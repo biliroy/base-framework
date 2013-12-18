@@ -31,7 +31,7 @@ import org.springframework.stereotype.Component;
  * 表中插入一条数据，当某个Controller需要做操作记录但又重定向到另外一个也是需要做操作记录
  * 时，会在TB_OPERATING_RECORDD表中插入两条数据，以此类推。
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @Aspect

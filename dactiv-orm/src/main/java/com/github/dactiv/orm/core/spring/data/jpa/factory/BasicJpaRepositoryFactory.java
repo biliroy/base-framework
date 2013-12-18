@@ -33,7 +33,7 @@ import org.springframework.data.repository.core.RepositoryMetadata;
 /**
  * JPA specific generic repository factory.
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @SuppressWarnings({ "unchecked", "rawtypes" })

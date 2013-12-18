@@ -25,7 +25,7 @@ import com.github.dactiv.orm.core.spring.data.jpa.specification.SpecificationEnt
  * 
  * 辅助{@link JpaRestrictionBuilder}类创建PropertyFilter后使用哪种约束条件向{@link CriteriaBuilder}添加{@link Predicate}进行条件过滤查询的接口
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public interface PredicateBuilder {

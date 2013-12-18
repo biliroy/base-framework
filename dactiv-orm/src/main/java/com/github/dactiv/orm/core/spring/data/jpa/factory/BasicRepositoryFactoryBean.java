@@ -26,7 +26,7 @@ import org.springframework.data.repository.core.support.RepositoryFactorySupport
 /**
  * 创建srping data jpa repository接口代理类的FactoryBean
  * 
- * @author vincent
+ * @author maurice
  *
  * @param <T> repository
  */

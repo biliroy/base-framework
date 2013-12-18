@@ -46,7 +46,7 @@ import com.github.dactiv.common.type.FieldType;
  * sql:update tb_user set state = ? where id = ?
  * </pre>
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @Target(ElementType.TYPE)

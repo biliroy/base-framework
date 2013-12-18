@@ -29,7 +29,7 @@ import org.springframework.beans.BeanUtils;
  * 辅助类，将对象转换为map对象,以对象的属性名称做key，属性值做value构造map对象，
  * 主要目的用在{@link MapUtils#toMap(ResourceBundle)}将对象转换为map时使用。
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public class BeanResourceBundle extends ResourceBundle{

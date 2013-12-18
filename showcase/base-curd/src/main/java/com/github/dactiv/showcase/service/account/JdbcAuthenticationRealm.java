@@ -17,7 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * 
  * apache shiro 的身份验证类
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public class JdbcAuthenticationRealm extends AuthorizationRealm{

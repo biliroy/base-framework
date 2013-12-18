@@ -14,7 +14,7 @@ import com.github.dactiv.showcase.web.account.UserController;
  * 之后都会做一次记录，并个把所有的记录存储在TB_OPERATING_RECORD
  * 表中，详细例子:{@link UserController}
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @Target({ElementType.METHOD, ElementType.TYPE})

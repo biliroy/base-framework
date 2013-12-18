@@ -32,13 +32,13 @@ import com.github.dactiv.orm.core.spring.data.jpa.specification.Specifications;
  * 1.值等于正常值的，如："amdin"，会产生的squall为:property = 'admin'
  * </p>
  * <p>
- * 2.值等于或值的，如："admin_OR_vincent"，会产生的sql为:property = 'admin' or property = 'vincent'
+ * 2.值等于或值的，如："admin_OR_maurice"，会产生的sql为:property = 'admin' or property = 'maurice'
  * </p>
  * <p>
- * 3.值等于与值的,如:"admin_AND_vincent"，会产生的sql为:property = 'admin' and property = 'vincent'
+ * 3.值等于与值的,如:"admin_AND_maurice"，会产生的sql为:property = 'admin' and property = 'maurice'
  * </p>
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public abstract class PredicateSingleValueSupport implements PredicateBuilder{

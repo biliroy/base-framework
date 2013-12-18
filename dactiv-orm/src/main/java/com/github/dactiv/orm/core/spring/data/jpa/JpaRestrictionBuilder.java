@@ -38,7 +38,7 @@ import com.github.dactiv.orm.core.spring.data.jpa.specification.SpecificationEnt
  * jpa约束捆绑者，将所有的{@link PredicateBuilder}实现类添加到{@link PropertyFilters#getRestrictionsMap()}中，
  * 辅佐PropertyFilterSpecification和RestrictionNameSpecification做创建Predicate操作。
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public class JpaRestrictionBuilder{

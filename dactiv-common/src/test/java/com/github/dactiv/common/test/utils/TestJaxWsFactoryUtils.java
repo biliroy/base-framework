@@ -9,7 +9,7 @@ import org.junit.runners.BlockJUnit4ClassRunner;
 /**
  * JaxWsFactory工具类单元测试
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @RunWith(BlockJUnit4ClassRunner.class)

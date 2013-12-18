@@ -28,7 +28,7 @@ import org.springframework.data.jpa.domain.Specification;
 /**
  * 实现spring data jpa的{@link Specification}接口，通过该类支持对象属性名查询方法
  * 
- * @author vincent
+ * @author maurice
  *
  * @param <T> orm 对象
  */

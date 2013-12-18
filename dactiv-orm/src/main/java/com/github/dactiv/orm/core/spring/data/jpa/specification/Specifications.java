@@ -30,7 +30,7 @@ import org.springframework.data.jpa.domain.Specification;
 /**
  * Specification工具类,帮助通过PropertyFilter和属性名创建Specification
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @SuppressWarnings({ "rawtypes", "unchecked" })

@@ -3,7 +3,7 @@ package com.github.dactiv.showcase.common.enumeration;
 /**
  * 字典类型枚举
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public enum SystemDictionaryCode {

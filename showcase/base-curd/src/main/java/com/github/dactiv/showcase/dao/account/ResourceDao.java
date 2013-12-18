@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 /**
  * 资源数据访问
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @Repository

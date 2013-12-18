@@ -13,7 +13,7 @@ import org.hibernate.annotations.GenericGenerator;
 /**
  * UUID主键父类
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @MappedSuperclass

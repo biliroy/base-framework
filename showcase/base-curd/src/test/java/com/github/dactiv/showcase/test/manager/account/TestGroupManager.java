@@ -21,7 +21,7 @@ import com.google.common.collect.Lists;
 /**
  * 测试组管理所有方法
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public class TestGroupManager extends ManagerTestCaseSupport{

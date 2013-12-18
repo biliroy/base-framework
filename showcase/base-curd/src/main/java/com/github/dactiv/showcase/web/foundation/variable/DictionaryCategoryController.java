@@ -24,7 +24,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 /**
  * 字典类别管理Controller
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @Controller

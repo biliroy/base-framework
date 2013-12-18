@@ -18,7 +18,7 @@ package com.github.dactiv.orm.core;
 /**
  * 所有约束名称
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public interface RestrictionNames {

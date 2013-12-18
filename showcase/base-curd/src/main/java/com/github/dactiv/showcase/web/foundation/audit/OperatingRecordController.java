@@ -28,7 +28,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 /**
  * 操作记录管理Controller
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @Controller

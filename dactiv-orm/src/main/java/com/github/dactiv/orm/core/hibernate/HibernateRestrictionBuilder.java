@@ -35,7 +35,7 @@ import org.hibernate.criterion.Criterion;
 /**
  * Hibernate约束捆绑者，帮助HibernateDao对buildCriterion方法创建相对的Criterion对象给Hibernate查询
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public class HibernateRestrictionBuilder {

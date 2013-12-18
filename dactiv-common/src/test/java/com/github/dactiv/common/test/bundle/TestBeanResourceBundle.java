@@ -32,7 +32,7 @@ public class TestBeanResourceBundle {
 		user.setPassword("123456");
 		user.setRealname("chenxiaobo");
 		user.setState(new Integer(1));
-		user.setUsername("vincent");
+		user.setUsername("maurice");
 		
 		Map<String, Object> map = Maps.newHashMap();
 		

@@ -10,7 +10,7 @@ import com.github.dactiv.common.utils.CollectionUtils;
 @SuppressWarnings("serial")
 public class User extends UniversallyUniqueIdentifier{
 	//登录名称
-	private String username = "vincent";
+	private String username = "maurice";
 	//登录密码
 	private String password = "dkfjsoj42kl34j2348aslkdfj";
 	//真实名称

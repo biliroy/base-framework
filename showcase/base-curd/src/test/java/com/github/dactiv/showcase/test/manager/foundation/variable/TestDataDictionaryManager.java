@@ -20,7 +20,7 @@ import com.google.common.collect.Lists;
 /**
  * 测试数据字典管理所有方法
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public class TestDataDictionaryManager extends ManagerTestCaseSupport{

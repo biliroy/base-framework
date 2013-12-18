@@ -21,7 +21,7 @@ import com.google.common.collect.Lists;
 /**
  * 测试用户管理所有方法
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public class TestUserManager extends ManagerTestCaseSupport{
@@ -74,7 +74,7 @@ public class TestUserManager extends ManagerTestCaseSupport{
 		User entity = accountManager.getUser("SJDK3849CKMS3849DJCK2039ZMSK0001");
 		entity.setUsername("modify");
 		entity.setPassword("321");
-		entity.setRealname("vincent");
+		entity.setRealname("maurice");
 		
 		accountManager.updateUser(entity);
 		
@@ -85,7 +85,7 @@ public class TestUserManager extends ManagerTestCaseSupport{
 		
 		assertEquals(entity.getUsername(), "admin");
 		assertEquals(entity.getPassword(), "21232f297a57a5a743894a0e4a801fc3");
-		assertEquals(entity.getRealname(), "vincent");
+		assertEquals(entity.getRealname(), "maurice");
 	}
 
 	@Test
@@ -106,7 +106,7 @@ public class TestUserManager extends ManagerTestCaseSupport{
 	public void testGetUserByUsername() {
 		User entity = accountManager.getUserByUsername("admin");
 		assertEquals(entity.getUsername(), "admin");
-		assertEquals(entity.getRealname(), "vincent.chen");
+		assertEquals(entity.getRealname(), "maurice.chen");
 	}
 	
 }

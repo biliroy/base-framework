@@ -16,7 +16,7 @@ import com.github.dactiv.showcase.entity.IdEntity;
 /**
  * 数据字典实体
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @Entity

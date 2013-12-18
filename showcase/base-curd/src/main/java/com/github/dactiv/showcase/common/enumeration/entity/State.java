@@ -5,7 +5,7 @@ import com.github.dactiv.showcase.common.enumeration.ValueEnum;
 /**
  * 状态枚举
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public enum State implements ValueEnum<Integer>{

@@ -3,7 +3,7 @@ package com.github.dactiv.showcase.common.enumeration;
 /**
  * 针对键为String值任意Object类型的枚举接口父类
  * 
- * @author vincent
+ * @author maurice
  *
  * @param <V>
  */

@@ -16,7 +16,7 @@ import com.google.common.collect.Lists;
 /**
  * 数据字典数据访问
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @Repository

@@ -23,7 +23,7 @@ import com.google.common.collect.Lists;
 /**
  * apache shiro 的公用授权类
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public abstract class AuthorizationRealm extends AuthorizingRealm{

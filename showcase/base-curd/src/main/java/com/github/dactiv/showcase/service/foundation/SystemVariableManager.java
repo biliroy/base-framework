@@ -18,7 +18,7 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * 系统字典管理业务逻辑
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @Service

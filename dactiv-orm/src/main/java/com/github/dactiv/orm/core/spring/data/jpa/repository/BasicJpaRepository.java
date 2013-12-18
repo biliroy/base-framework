@@ -27,7 +27,7 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
 /**
  * 针对spring data jpa所提供的接口{@link JpaRepository}再次扩展，支持{@link PropertyFilter}查询和其他方式查询
- * @author vincent
+ * @author maurice
  *
  * @param <T> ORM对象
  * @param <ID> 主键Id类型

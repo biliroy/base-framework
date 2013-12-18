@@ -21,7 +21,7 @@ import com.google.common.collect.Lists;
 /**
  * 测试资源管理所有方法
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public class TestResourceManager extends ManagerTestCaseSupport{

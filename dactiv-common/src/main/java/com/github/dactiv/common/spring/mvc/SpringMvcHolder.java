@@ -25,7 +25,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 /**
  * spring mvc 上下文持有者，类似Struts2的ServletActionContext,
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @SuppressWarnings("unchecked")

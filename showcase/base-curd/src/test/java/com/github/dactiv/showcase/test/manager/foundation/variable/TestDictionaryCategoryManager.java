@@ -14,7 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 /**
  * 测试字典类别管理所有方法
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public class TestDictionaryCategoryManager extends ManagerTestCaseSupport {

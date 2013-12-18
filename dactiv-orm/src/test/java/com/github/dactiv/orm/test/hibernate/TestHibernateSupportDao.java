@@ -97,7 +97,7 @@ public class TestHibernateSupportDao {
 		assertEquals(user.size(), 4);
 		assertEquals(user.get(0).getLoginName(), "admin");
 		
-		user = userDao.findByProperty("loginName", "vincent");
+		user = userDao.findByProperty("loginName", "maurice");
 		assertEquals(user.size(), 1);
 		
 		user = userDao.findByProperty("loginName", "m",RestrictionNames.LIKE);
@@ -113,12 +113,12 @@ public class TestHibernateSupportDao {
 		User user = new User();
 		
 		user = userDao.findUniqueByCriterion(new Criterion[]{
-				Restrictions.eq("loginName", "vincent"),
+				Restrictions.eq("loginName", "maurice"),
 				Restrictions.eq("state", 1)
 		});
 		assertEquals(user.getId(), "SJDK3849CKMS3849DJCK2039ZMSK0001");
 		
-		user = userDao.findUniqueByProperty("loginName", "vincent");
+		user = userDao.findUniqueByProperty("loginName", "maurice");
 		assertEquals(user.getId(), "SJDK3849CKMS3849DJCK2039ZMSK0001");
 		
 		user = userDao.findUniqueByProperty("realName", "Mot", RestrictionNames.LIKE);
@@ -135,7 +135,7 @@ public class TestHibernateSupportDao {
 		
 		Criteria c = sessionFactory.getCurrentSession().createCriteria(User.class);
 		
-		page = userDao.findPage(request, c.add(Restrictions.eq("loginName", "vincent")));
+		page = userDao.findPage(request, c.add(Restrictions.eq("loginName", "maurice")));
 		assertEquals(page.getTotalItems(), 1);
 		assertEquals(page.getTotalPages(), 1);
 		

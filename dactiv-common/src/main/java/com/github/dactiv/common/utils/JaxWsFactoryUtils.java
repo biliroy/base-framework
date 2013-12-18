@@ -26,7 +26,7 @@ import org.apache.cxf.jaxws.endpoint.dynamic.JaxWsDynamicClientFactory;
 /**
  * 借助Cxf对JaxWs生成接口的工具类
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @SuppressWarnings("unchecked")

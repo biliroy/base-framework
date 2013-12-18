@@ -28,7 +28,7 @@ import com.github.dactiv.orm.core.RestrictionNames;
  * 表达式:NE属性类型_属性名称[_OR_属性名称...]
  * </p>
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public class NeRestriction extends EqRestriction{

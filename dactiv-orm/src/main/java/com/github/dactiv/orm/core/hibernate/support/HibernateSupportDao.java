@@ -48,7 +48,7 @@ import com.google.common.collect.Lists;
 /**
  * {@link BasicHibernateDao}基础扩展类。包含对{@link PropertyFilter}的支持。或其他查询的支持
  * 
- * @author vincent
+ * @author maurice
  *
  * @param <T> ORM对象
  * @param <PK> 主键Id类型

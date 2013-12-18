@@ -26,7 +26,7 @@ import org.hibernate.annotations.NamedQuery;
 /**
  * 资源安全类
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @Entity

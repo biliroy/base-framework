@@ -19,7 +19,7 @@ import org.springframework.stereotype.Component;
 /**
  * 验证码登录认证Filter
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @Component
@@ -256,7 +256,7 @@ public class CaptchaAuthenticationFilter extends FormAuthenticationFilter{
 	 * UsernamePasswordToke扩展，添加一个rememberMeValue字段，获取提交上来的rememberMe值
 	 * 根据该rememberMe值去设置Cookie的有效时间。
 	 * 
-	 * @author vincent
+	 * @author maurice
 	 *
 	 */
 	@SuppressWarnings("serial")

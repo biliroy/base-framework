@@ -16,7 +16,7 @@ import org.junit.Test;
 /**
  * 反射工具类单元测试
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public class TestReflectionUtils {
@@ -30,8 +30,8 @@ public class TestReflectionUtils {
 	
 	@Test
 	public void testInvokeMethod() {
-		ReflectionUtils.invokeMethod(user, "setUsername", new Class[]{String.class}, new String[]{"vincent"});
-		assertEquals(user.getUsername(), "vincent");
+		ReflectionUtils.invokeMethod(user, "setUsername", new Class[]{String.class}, new String[]{"maurice"});
+		assertEquals(user.getUsername(), "maurice");
 	}
 
 	@Test
@@ -42,17 +42,17 @@ public class TestReflectionUtils {
 
 	@Test(expected=IllegalArgumentException.class)
 	public void testGetFieldValue() {
-		ReflectionUtils.invokeMethod(user, "setUsername", new Class[]{String.class}, new String[]{"vincent"});
-		assertEquals("vincent", ReflectionUtils.getFieldValue(user, "username"));
-		ReflectionUtils.getFieldValue(user, "vincent");
+		ReflectionUtils.invokeMethod(user, "setUsername", new Class[]{String.class}, new String[]{"maurice"});
+		assertEquals("maurice", ReflectionUtils.getFieldValue(user, "username"));
+		ReflectionUtils.getFieldValue(user, "maurice");
 		assertEquals(null, ReflectionUtils.getFieldValue(user, "password"));
 	}
 
 	@Test
 	public void testSetFieldValue() {
-		ReflectionUtils.setFieldValue(user, "username", "vincent");
+		ReflectionUtils.setFieldValue(user, "username", "maurice");
 		
-		assertEquals(ReflectionUtils.getFieldValue(user, "username"), "vincent");
+		assertEquals(ReflectionUtils.getFieldValue(user, "username"), "maurice");
 	}
 
 	@Test

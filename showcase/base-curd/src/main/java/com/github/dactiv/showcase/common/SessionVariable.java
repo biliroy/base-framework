@@ -11,7 +11,7 @@ import com.github.dactiv.showcase.entity.account.User;
  * 
  * 系统常用变量模型实体
  * 
- * @author vincent
+ * @author maurice
  * 
  */
 public class SessionVariable implements Serializable {

@@ -15,7 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * 测试操作记录业务逻辑
  * 
- * @author vincent
+ * @author maurice
  *
  */
 public class TestOperatingRecordManager extends ManagerTestCaseSupport{

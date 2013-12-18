@@ -21,7 +21,7 @@ import com.google.common.collect.Lists;
 /**
  * 系统变量工具类
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @Component

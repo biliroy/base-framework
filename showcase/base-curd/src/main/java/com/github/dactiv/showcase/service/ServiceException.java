@@ -2,7 +2,7 @@ package com.github.dactiv.showcase.service;
 
 /**
  * 业务层的异常类
- * @author vincent
+ * @author maurice
  *
  */
 @SuppressWarnings("serial")

@@ -9,7 +9,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 /**
  * 组实体
  * 
- * @author vincent
+ * @author maurice
  *
  */
 @XmlRootElement

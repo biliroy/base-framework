@@ -72,10 +72,10 @@ public class TestJpaSupportRepository {
 		Assert.assertEquals(userList.size(), 6);
 		
 		userList = userRepository.findAll(Specifications.get(PropertyFilters.build("LIKES_loginName", "m")));
-		Assert.assertEquals(userList.size(), 4);
+		Assert.assertEquals(userList.size(), 5);
 		
 		userList = userRepository.findAll(Specifications.get(PropertyFilters.build("RLIKES_loginName", "m")));
-		Assert.assertEquals(userList.size(), 3);
+		Assert.assertEquals(userList.size(), 4);
 		
 		userList = userRepository.findAll(Specifications.get(PropertyFilters.build("LLIKES_loginName", "n")));
 		Assert.assertEquals(userList.size(), 1);
@@ -129,13 +129,13 @@ public class TestJpaSupportRepository {
 				PropertyFilters.build("LIKES_loginName", "m"),
 				PropertyFilters.build("EQI_state", "1")
 		)));
-		Assert.assertEquals(userList.size(), 4);
+		Assert.assertEquals(userList.size(), 5);
 		
 		userList = userRepository.findAll(Specifications.get(Lists.newArrayList(
 				PropertyFilters.build("LIKES_loginName", "m"),
 				PropertyFilters.build("EQI_state", "1")
 		)),new Sort(Direction.DESC, "loginName","realName"));
-		Assert.assertEquals(userList.size(), 4);
+		Assert.assertEquals(userList.size(), 5);
 		
 		
 		Pageable pageable = new PageRequest(1, 2);

@@ -91,21 +91,21 @@ public class TestHibernateSupportDao {
 		List<User> user = Lists.newArrayList();
 		
 		user = userDao.findByPropertyFilter(filters);
-		assertEquals(user.size(), 4);
+		assertEquals(user.size(), 5);
 		
 		user = userDao.findByPropertyFilter(filters, Order.asc("loginName"),Order.desc("state"));
-		assertEquals(user.size(), 4);
+		assertEquals(user.size(), 5);
 		assertEquals(user.get(0).getLoginName(), "admin");
 		
 		user = userDao.findByProperty("loginName", "maurice");
 		assertEquals(user.size(), 1);
 		
 		user = userDao.findByProperty("loginName", "m",RestrictionNames.LIKE);
-		assertEquals(user.size(), 4);
+		assertEquals(user.size(), 5);
 		
 		user = userDao.findByProperty("loginName", "m",RestrictionNames.LIKE, Order.asc("loginName"),Order.desc("state"));
-		assertEquals(user.size(), 4);
-		assertEquals(user.get(0).getLoginName(), "admin");
+		assertEquals(user.size(), 5);
+		assertEquals(user.get(0).getLoginName(), "maurice");
 	}
 
 	@Test
@@ -145,22 +145,22 @@ public class TestHibernateSupportDao {
 		);
 		
 		page = userDao.findPage(request, filters);
-		assertEquals(page.getTotalItems(), 4);
+		assertEquals(page.getTotalItems(), 5);
 		assertEquals(page.getTotalPages(), 1);
 		
 		page = userDao.findPage(request, "from User u where u.loginName like ?", "%m%");
-		assertEquals(page.getTotalItems(), 4);
+		assertEquals(page.getTotalItems(), 5);
 		assertEquals(page.getTotalPages(), 1);
 
 		Query query = sessionFactory.getCurrentSession().createQuery("from User u where u.loginName like ?1");
 		query.setParameter("1", "%m%");
 		
 		page = userDao.findPage(request, query);
-		assertEquals(page.getTotalItems(), 4);
+		assertEquals(page.getTotalItems(), 5);
 		assertEquals(page.getTotalPages(), 1);
 
 		page = userDao.findPage(request, "from User u where u.loginName like ?1", "%m%");
-		assertEquals(page.getTotalItems(), 4);
+		assertEquals(page.getTotalItems(), 5);
 		assertEquals(page.getTotalPages(), 1);
 		
 		request.setOrderBy(null);

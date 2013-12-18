@@ -1,9 +1,9 @@
 ###框架说明
 
 
-exit-web-framework是对常用的java web开发封装实用功能来提高开发效率的底层框架。exit-web-framework基于Spring 3做核心框架、Hibernate4或spring data jpa做持久化框架,用spring mvc 框架对mvc做管理。使用到的新功能有spring缓存工厂、apeche shiro安全框架、spring mvc 3,spring data jpa等主要流行技术, 该项目分为两个部分做底层的封装，和带两个项目功能演示例子。
+base-framework是对常用的java web开发封装实用功能来提高开发效率的底层框架。base-framework基于Spring 3做核心框架、Hibernate4或spring data jpa做持久化框架,用spring mvc 框架对mvc做管理。使用到的新功能有spring缓存工厂、apeche shiro安全框架、spring mvc 3,spring data jpa等主要流行技术, 该项目分为两个部分做底层的封装，和带两个项目功能演示例子。
 
-[相关帮助文档](https://github.com/exitsoft/exit-web-framework/wiki)
+[相关帮助文档](https://github.com/exitsoft/base-framework/wiki)
 
 #### 初始化工作:
 
@@ -17,13 +17,13 @@ exit-web-framework是对常用的java web开发封装实用功能来提高开发
 1. 添加maven bin目录至系统环境变量PATH中， %M2_HOME%\bin
 1. 确认Maven的安装：cmd > mvn -version
 
-##### 安装exit-web-framework到maven中
+##### 安装base-framework到maven中
 
-1. 使用git或者svn下载exit-web-framework
+1. 使用git或者svn下载base-framework
 
 ***
-	git地址:git://github.com/exitsoft/exit-web-framework.git
-	svn地址:https://github.com/exitsoft/exit-web-framework.git
+	git地址:git://github.com/exitsoft/base-framework.git
+	svn地址:https://github.com/exitsoft/base-framework.git
 ***
 
 1. 点击根目录下的quick-start.bat文件进行安装,当看见以下信息时表示安装成功:
@@ -42,7 +42,7 @@ exit-web-framework是对常用的java web开发封装实用功能来提高开发
 
 你可以通过http://localhost:8080/exitsoft-basic-curd/来访问项目
 
-该安装过程会将exit-web-framework中的exit-common和exit-orm生成jar包放入maven的.m2文件夹中（当然,这两个框架使用到的依赖jar包也会下载到.m2文件夹中）.同时也会初始化h2数据库和启动jetty，让执行完成后直接访问。
+该安装过程会将base-framework中的exit-common和exit-orm生成jar包放入maven的.m2文件夹中（当然,这两个框架使用到的依赖jar包也会下载到.m2文件夹中）.同时也会初始化h2数据库和启动jetty，让执行完成后直接访问。
 
 ##### exitsoft common 简单说明
 

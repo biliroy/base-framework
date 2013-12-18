@@ -17,14 +17,14 @@
 			jdbc:h2:mem:exitsoft-basic-curd;DB_CLOSE_DELAY=-1
 		</property>
 		 
-		<mapping class="org.exitsoft.showcase.entity.account.User" />
-		<mapping class="org.exitsoft.showcase.entity.account.Group" />
-		<mapping class="org.exitsoft.showcase.entity.account.Resource" />
+		<mapping class="com.github.dactiv.showcase.entity.account.User" />
+		<mapping class="com.github.dactiv.showcase.entity.account.Group" />
+		<mapping class="com.github.dactiv.showcase.entity.account.Resource" />
 		
-		<mapping class="org.exitsoft.showcase.entity.foundation.variable.DataDictionary"/>
-		<mapping class="org.exitsoft.showcase.entity.foundation.variable.DictionaryCategory"/>
+		<mapping class="com.github.dactiv.showcase.entity.foundation.variable.DataDictionary"/>
+		<mapping class="com.github.dactiv.showcase.entity.foundation.variable.DictionaryCategory"/>
 		
-		<mapping class="org.exitsoft.showcase.entity.foundation.audit.OperatingRecord"/>
+		<mapping class="com.github.dactiv.showcase.entity.foundation.audit.OperatingRecord"/>
 	</session-factory> -->
 	
 	<!-- mysql factory -->
@@ -41,14 +41,14 @@
 			jdbc:mysql://localhost:3306/exitsoft-basic-curd?autoReconnect=true
 		</property>
 		 
-		<mapping class="org.exitsoft.showcase.entity.account.User" />
-		<mapping class="org.exitsoft.showcase.entity.account.Group" />
-		<mapping class="org.exitsoft.showcase.entity.account.Resource" />
+		<mapping class="com.github.dactiv.showcase.entity.account.User" />
+		<mapping class="com.github.dactiv.showcase.entity.account.Group" />
+		<mapping class="com.github.dactiv.showcase.entity.account.Resource" />
 		
-		<mapping class="org.exitsoft.showcase.entity.foundation.variable.DataDictionary"/>
-		<mapping class="org.exitsoft.showcase.entity.foundation.variable.DictionaryCategory"/>
+		<mapping class="com.github.dactiv.showcase.entity.foundation.variable.DataDictionary"/>
+		<mapping class="com.github.dactiv.showcase.entity.foundation.variable.DictionaryCategory"/>
 		
-		<mapping class="org.exitsoft.showcase.entity.foundation.audit.OperatingRecord"/>
+		<mapping class="com.github.dactiv.showcase.entity.foundation.audit.OperatingRecord"/>
 	</session-factory>
 	
 </hibernate-configuration>

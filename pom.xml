@@ -5,7 +5,7 @@
 	http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.exitsoft</groupId>
+	<groupId>com.github.dactiv</groupId>
 	<artifactId>exit-web-framework-project</artifactId>
 	<version>1.3.0-SNAPSHOT</version>
 	<name>exit web framework project</name>

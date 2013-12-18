@@ -32,7 +32,7 @@
 	</bean>
 	
 	<!-- Java邮件服务 -->
-	<bean id="javaMailService" class="org.exitsoft.common.spring.mail.JavaMailService">
+	<bean id="javaMailService" class="com.github.dactiv.common.spring.mail.JavaMailService">
 		<property name="executor" ref="taskExecutor" />
 		<property name="freemarkerConfiguration" ref="freemarkerConfiguration" />
 		<property name="mailSender" ref="mailSender" />

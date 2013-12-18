@@ -15,7 +15,7 @@
 			org.hibernate.dialect.H2Dialect
 		</property>
 		<property name="connection.url">
-			jdbc:h2:mem:exit-orm;DB_CLOSE_DELAY=-1
+			jdbc:h2:mem:dactiv-orm;DB_CLOSE_DELAY=-1
 		</property>
 		
 		<mapping class="com.github.dactiv.orm.test.entity.User" />

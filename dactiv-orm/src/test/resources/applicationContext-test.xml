@@ -33,7 +33,7 @@
 	<!-- 数据源配置,在测试环境使用单连接 -->
 	<bean id="dataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
 		<property name="driverClassName" value="org.h2.Driver" />
-		<property name="url" value="jdbc:h2:mem:exit-orm;DB_CLOSE_DELAY=-1" />
+		<property name="url" value="jdbc:h2:mem:dactiv-orm;DB_CLOSE_DELAY=-1" />
 		<property name="username" value="sa" />
 		<property name="password" value="" />
 	</bean>

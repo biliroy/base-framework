@@ -3,7 +3,7 @@
 
 base-framework是对常用的java web开发封装实用功能来提高开发效率的底层框架。base-framework基于Spring 3做核心框架、Hibernate4或spring data jpa做持久化框架,用spring mvc 框架对mvc做管理。使用到的新功能有spring缓存工厂、apeche shiro安全框架、spring mvc 3,spring data jpa等主要流行技术, 该项目分为两个部分做底层的封装，和带两个项目功能演示例子。
 
-[相关帮助文档](https://github.com/exitsoft/base-framework/wiki)
+[相关帮助文档](https://github.com/dactiv/base-framework/wiki)
 
 #### 初始化工作:
 

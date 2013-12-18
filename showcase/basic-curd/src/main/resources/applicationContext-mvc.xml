@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" 
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc 
+		http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop 
+		http://www.springframework.org/schema/aop/spring-aop.xsd 
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<description>Spring MVC 3配置 </description>
+	
+	<!-- 定义受环境影响易变的变量 -->
+	<context:property-placeholder ignore-resource-not-found="true" location="classpath*:/application.properties" />
+
+	<aop:aspectj-autoproxy proxy-target-class="true" />
+
+	<!-- 自动扫描且只扫描@Controller -->
+	<context:component-scan base-package="org.exitsoft.showcase.web" use-default-filters="false">
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller" />
+	</context:component-scan>
+
+	<mvc:view-controller path="/" view-name="redirect:/index" />
+
+	<!-- 使用缓存mvc注解配置 -->
+	<mvc:annotation-driven>
+		<!-- 配置StringHttpMessageConverter当@ResponseBody 时中文正常显示 -->
+		<mvc:message-converters>
+			<bean class="org.springframework.http.converter.StringHttpMessageConverter">
+				<property name="supportedMediaTypes">
+					<list>
+						<value>text/plain;charset=UTF-8</value>
+					</list>
+				</property>
+			</bean>
+		</mvc:message-converters>
+	</mvc:annotation-driven>
+
+	<!-- spring mvc 的资源路径 -->
+	<mvc:resources mapping="/resource/**" location="/resource/" />
+
+	<!-- 使用默认的servlet handler -->
+	<mvc:default-servlet-handler />
+	
+	<!-- 启动文件上传Resolver -->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
+	
+	<!-- 启动异常Resolver -->
+	<bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<property name="defaultErrorView" value="exception/defaule-error" />
+	</bean>
+
+	<!-- freemarker的格式和其他配置 -->
+	<bean id="freemarkerConfigurer" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+		<property name="templateLoaderPath" value="/WEB-INF/page/" />
+		<property name="defaultEncoding" value="UTF-8" />
+		<property name="freemarkerSettings">
+			<props>
+				<prop key="template_update_delay">10</prop>
+				<prop key="locale">zh_CN</prop>
+				<prop key="datetime_format">yyyy-MM-dd HH:mm:ss</prop>
+				<prop key="date_format">yyyy-MM-dd</prop>
+				<prop key="number_format">#.##</prop>
+			</props>
+		</property>
+	</bean>
+
+	<!-- FreeMarker视图解析,在这里配置后缀名ftl和视图解析器 -->
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+		<property name="suffix" value=".html" />
+		<property name="requestContextAttribute" value="request" />
+		<property name="contentType" value="text/html;charset=UTF-8" />
+	</bean>
+	
+   	<!-- 启用shrio授权注解拦截方式  -->
+	<bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+	    <property name="securityManager" ref="securityManager" />
+	</bean>
+
+</beans>

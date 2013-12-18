@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>com.github.dactiv</groupId>
 		<artifactId>parent</artifactId>
-		<version>1.3.0-SNAPSHOT</version>
+		<version>1.0.0-SNAPSHOT</version>
 		<relativePath>../../dactiv-parent/</relativePath>
 	</parent>
 	<groupId>com.github.dactiv.showcase</groupId>

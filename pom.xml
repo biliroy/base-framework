@@ -7,7 +7,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.dactiv</groupId>
 	<artifactId>base-framework-project</artifactId>
-	<version>1.3.0-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<name>base web framework project</name>
 	<packaging>pom</packaging>
 	

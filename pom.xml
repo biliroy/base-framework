@@ -22,7 +22,7 @@
 	</licenses>
 	
 	<issueManagement>
-        <system>Github</system>
+        <system>github</system>
         <url>https://github.com/dactiv/base-framework/issues</url>
     </issueManagement>
 	

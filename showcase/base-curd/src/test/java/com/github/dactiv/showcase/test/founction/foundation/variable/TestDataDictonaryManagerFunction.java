@@ -32,7 +32,7 @@ public class TestDataDictonaryManagerFunction extends FunctionTestCaseSupport{
 		assertEquals(beforeTrs.size(), 10);
 		
 		//打开添加页面
-		s.click(By.xpath("//a[@href='/exitsoft-basic-curd/foundation/variable/data-dictionary/read']"));
+		s.click(By.xpath("//a[@href='/base-curd/foundation/variable/data-dictionary/read']"));
 		//填写表单
 		s.type(By.xpath("//form[@id='save-data-dictionary-form']//input[@name='name']"), "test_data_dictionary");
 		s.type(By.xpath("//form[@id='save-data-dictionary-form']//input[@name='value']"), "01");
@@ -51,7 +51,7 @@ public class TestDataDictonaryManagerFunction extends FunctionTestCaseSupport{
 		assertTrue(message.contains("保存成功"));
 		
 		//点击下一页
-		s.click(By.xpath("//a[@href='/exitsoft-basic-curd/foundation/variable/data-dictionary/view?pageNo=2']"));
+		s.click(By.xpath("//a[@href='/base-curd/foundation/variable/data-dictionary/view?pageNo=2']"));
 		//点击编辑功能
 		s.findElement(By.xpath("//table//tbody//tr//*[text()='test_data_dictionary']//..//a")).click();
 		//填写表单
@@ -66,7 +66,7 @@ public class TestDataDictonaryManagerFunction extends FunctionTestCaseSupport{
 		assertTrue(message.contains("保存成功"));
 		
 		//点击下一页
-		s.click(By.xpath("//a[@href='/exitsoft-basic-curd/foundation/variable/data-dictionary/view?pageNo=2']"));
+		s.click(By.xpath("//a[@href='/base-curd/foundation/variable/data-dictionary/view?pageNo=2']"));
 		//选中删除的记录
 		s.check(By.xpath("//table//tbody//tr//*[text()='test_data_dictionary_modify']//..//input"));
 		//提交删除表单

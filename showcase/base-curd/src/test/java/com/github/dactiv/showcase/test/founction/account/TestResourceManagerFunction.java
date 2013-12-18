@@ -32,7 +32,7 @@ public class TestResourceManagerFunction extends FunctionTestCaseSupport{
 		assertEquals(beforeTrs.size(), 10);
 		
 		//打开添加页面
-		s.click(By.xpath("//a[@href='/exitsoft-basic-curd/account/resource/read']"));
+		s.click(By.xpath("//a[@href='/base-curd/account/resource/read']"));
 		//填写表单
 		s.getSelect(By.xpath("//form[@id='save-resource-form']//select[@name='type']")).selectByValue("01");
 		s.type(By.xpath("//form[@id='save-resource-form']//input[@name='value']"), "/test/**");

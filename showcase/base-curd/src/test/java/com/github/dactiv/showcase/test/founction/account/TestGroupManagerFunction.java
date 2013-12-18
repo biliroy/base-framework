@@ -32,7 +32,7 @@ public class TestGroupManagerFunction extends FunctionTestCaseSupport{
 		assertEquals(beforeTrs.size(), 3);
 		
 		//打开添加页面
-		s.click(By.xpath("//a[@href='/exitsoft-basic-curd/account/group/read']"));
+		s.click(By.xpath("//a[@href='/base-curd/account/group/read']"));
 		//填写表单
 		s.type(By.xpath("//form[@id='save-group-form']//input[@name='name']"), "test_group");
 		s.type(By.xpath("//form[@id='save-group-form']//input[@name='value']"), "/admin/**");

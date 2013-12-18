@@ -32,7 +32,7 @@ public class TestDictionaryCategoryManagerFunction extends FunctionTestCaseSuppo
 		assertEquals(beforeTrs.size(), 5);
 		
 		//打开添加页面
-		s.click(By.xpath("//a[@href='/exitsoft-basic-curd/foundation/variable/dictionary-category/read']"));
+		s.click(By.xpath("//a[@href='/base-curd/foundation/variable/dictionary-category/read']"));
 		//填写表单
 		s.type(By.xpath("//form[@id='save-dictionary-category-form']//input[@name='name']"), "test_dictionary_category");
 		s.type(By.xpath("//form[@id='save-dictionary-category-form']//input[@name='code']"), "test-code");

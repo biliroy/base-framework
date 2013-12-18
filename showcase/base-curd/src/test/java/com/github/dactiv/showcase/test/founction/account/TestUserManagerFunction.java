@@ -32,7 +32,7 @@ public class TestUserManagerFunction extends FunctionTestCaseSupport{
 		assertEquals(beforeTrs.size(), 5);
 		
 		//打开添加页面
-		s.click(By.xpath("//a[@href='/exitsoft-basic-curd/account/user/read']"));
+		s.click(By.xpath("//a[@href='/base-curd/account/user/read']"));
 		//填写表单
 		s.type(By.xpath("//form[@id='create-user-form']//input[@name='username']"), "admin");
 		s.type(By.xpath("//form[@id='create-user-form']//input[@name='realname']"), "vincent.chen");

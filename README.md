@@ -37,10 +37,10 @@ base-framework是对常用的java web开发封装实用功能来提高开发效�
 	[INFO] Final Memory: 9M/156M
 	[INFO] ------------------------------------------------------------------------
 	[INFO] start basic curd app
-	[INFO] Please wait a moment. When you see "[INFO] Started Jetty Server", you can visit: http://localhost:8080/exitsoft-basic-curd/ to view the demo
+	[INFO] Please wait a moment. When you see "[INFO] Started Jetty Server", you can visit: http://localhost:8080/base-curd/ to view the demo
 ***
 
-你可以通过http://localhost:8080/exitsoft-basic-curd/来访问项目
+你可以通过http://localhost:8080/base-curd/来访问项目
 
 该安装过程会将base-framework中的exit-common和exit-orm生成jar包放入maven的.m2文件夹中（当然,这两个框架使用到的依赖jar包也会下载到.m2文件夹中）.同时也会初始化h2数据库和启动jetty，让执行完成后直接访问。
 

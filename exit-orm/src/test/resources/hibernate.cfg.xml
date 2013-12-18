@@ -18,9 +18,9 @@
 			jdbc:h2:mem:exit-orm;DB_CLOSE_DELAY=-1
 		</property>
 		
-		<mapping class="org.exitsoft.orm.test.entity.User" />
-		<mapping class="org.exitsoft.orm.test.entity.Role" />
-		<mapping class="org.exitsoft.orm.test.entity.Menu" />
+		<mapping class="com.github.dactiv.orm.test.entity.User" />
+		<mapping class="com.github.dactiv.orm.test.entity.Role" />
+		<mapping class="com.github.dactiv.orm.test.entity.Menu" />
 	</session-factory>
 	
 </hibernate-configuration>

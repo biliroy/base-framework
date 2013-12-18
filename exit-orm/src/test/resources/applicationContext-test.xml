@@ -26,7 +26,7 @@
 	<aop:aspectj-autoproxy proxy-target-class="true"/>
 	
 	<!-- 使用annotation 自动注册bean,并保证@Required,@Autowired的属性被注入 -->
-	<context:component-scan base-package="org.exitsoft.orm.test">
+	<context:component-scan base-package="com.github.dactiv.orm.test">
 		<context:include-filter type="annotation" expression="org.aspectj.lang.annotation.Aspect" />
 	</context:component-scan>
 
@@ -59,7 +59,7 @@
 					<prop key="hibernate.format_sql">true</prop>
 				</props>
 			</property>
-			<property name="packagesToScan" value="org.exitsoft.orm.test.entity" />
+			<property name="packagesToScan" value="com.github.dactiv.orm.test.entity" />
 		</bean>
 		
 		<!-- 事务管理器配置,单数据源事务 -->
@@ -76,7 +76,7 @@
 		<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
 			<property name="dataSource" ref="dataSource"/>
 			<property name="jpaVendorAdapter" ref="hibernateJpaVendorAdapter"/>
-			<property name="packagesToScan" value="org.exitsoft.orm.test.entity"/>
+			<property name="packagesToScan" value="com.github.dactiv.orm.test.entity"/>
 			<property name="jpaProperties">
 				<props>
 					<prop key="hibernate.ejb.naming_strategy">org.hibernate.cfg.ImprovedNamingStrategy</prop>
@@ -90,7 +90,7 @@
 			<property name="entityManagerFactory" ref="entityManagerFactory"/>
 		</bean>
 		
-		<jpa:repositories base-package="org.exitsoft.orm.test"  transaction-manager-ref="transactionManager" />
+		<jpa:repositories base-package="com.github.dactiv.orm.test"  transaction-manager-ref="transactionManager" />
 	</beans>
 	
 </beans>

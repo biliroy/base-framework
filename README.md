@@ -1,7 +1,7 @@
 ###框架说明
 
 
-base-framework是对常用的java web开发封装实用功能来提高开发效率的底层框架。base-framework基于Spring 3做核心框架、Hibernate4或spring data jpa做持久化框架,用spring mvc 框架对mvc做管理。使用到的新功能有spring缓存工厂、apeche shiro安全框架、spring mvc 3,spring data jpa等主要流行技术, 该项目分为两个部分做底层的封装，和带两个项目功能演示例子。
+base-framework是对常用的java web开发封装实用功能来提高开发效率的底层框架。base-framework基于spring做核心框架、hibernate或spring data jpa做持久化框架,用spring mvc框架对mvc做管理。使用到的新功能有spring缓存工厂、apeche shiro安全框架、spring mvc,spring data jpa等主要流行技术, 该项目分为两个部分做底层的封装，和带有一个项目演示例子。
 
 [相关帮助文档](https://github.com/dactiv/base-framework/wiki)
 
@@ -50,7 +50,7 @@ base-framework是对常用的java web开发封装实用功能来提高开发效�
 
 ##### dactiv orm 简单说明
 
-该jar包是对持久化层的框架封装，目前只对Hibernate4和spring data jpa的CURD和辅助查询功能封装。
+该jar包是对持久化层的框架封装，目前只对Hibernate4和spring data jpa的curd和辅助查询功能封装。
 
 ##### 项目功能演示例子
 

@@ -10,10 +10,6 @@ apache shiro 是功能强大并且容易集成的开源权限框架，它能够�
 
 #### 扩张 filter 实现验证码登录 ####
 
-#### 更好性能的 shiro + ehcache ####
-
-#### 多 realms 的使用方式 ####
-
-#### 单点登录 ####
+#### 更好性能的 shiro + cache ####
 
 #### 定义 AuthorizationRealm 抽象类,让多 realms 授权得到统一 ####
